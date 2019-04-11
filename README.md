@@ -44,3 +44,10 @@ Your goal is to fix the code changing the code as little as possible. Obviously 
 
 ## Hints
 There are basically 4 bugs in this code. The 4th is kind of tricky, you must spot the 4 of them in order to score 1 full point, but also be aware of your available time, it's better to upload 3 bugs than nothing.
+
+## Bugs
+The four different bugs are explained below:
+* The replace method was replacing all characters with '/' instead of only the dots. I changed the regular expression used.
+* The second bug was the boundary of the random. It was set to 2, the upper boundary is never reached, so you always need to put the upper limit boundary one unit higher than the one you want. In this case, 3.
+* The third bug was that the StringBuffer constructor does not take as attribute a character, it only allows strings, character sequences or integers.
+* The fourth bug is that the switch case were lacking the "break" line.
