@@ -5,12 +5,12 @@ public class Main {
 
     public static void main(String[] args) {
         String emailAddress = "john.doe.mis2016@ie.edu";
-        String formattedEmailAddress = emailAddress.replaceAll("[^a-z0-9@]", "/");
+        String formattedEmailAddress = emailAddress.replaceAll("[^a-z0-9@]", "/"); //regex changed
 
         Random random = new Random();
         StringBuffer word = null;
 
-        switch (random.nextInt(2)) {
+        switch (random.nextInt(3)) { //bound of random (always counts one less so bound = 3, goes from 0 to 2
             case 0:
                 word = new StringBuffer('Y');
             case 1:
