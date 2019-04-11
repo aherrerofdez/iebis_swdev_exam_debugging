@@ -10,13 +10,16 @@ public class Main {
         Random random = new Random();
         StringBuffer word = null;
 
-        switch (random.nextInt(3)) { //bound of random (always counts one less so bound = 3, goes from 0 to 2
+        switch (random.nextInt(3)) {
             case 0:
                 word = new StringBuffer("Y"); //stringbuffer constructor allows as input char sequences, strings or ints
+                break; //lacking break
             case 1:
                 word = new StringBuffer("F"); //stringbuffer constructor allows as input char sequences, strings or ints
+                break; //lacking break
             case 2:
                 word = new StringBuffer("T"); //stringbuffer constructor allows as input char sequences, strings or ints
+                break; //lacking break
         }
 
         word.append('o');
